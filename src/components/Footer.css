@@ -1,0 +1,77 @@
+footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px; /* Padding around content */
+    text-align: center; /* Center-align text */
+    font-family: Arial, sans-serif; /* Font family for footer */
+}
+
+.footer-section {
+    margin-bottom: 20px; /* Space between sections */
+}
+
+.footer-section:last-child {
+    margin-bottom: 0; /* Remove margin from last section */
+}
+
+.footer-section h3 {
+    font-size: 18px; /* Section heading size */
+    margin-bottom: 10px; /* Space below headings */
+}
+
+.footer-section p {
+    font-size: 14px; /* Paragraph text size */
+    line-height: 1.5; /* Line height for readability */
+}
+
+.links-container {
+    display: flex; /* Flex container for links */
+    justify-content: center; /* Center the links */
+    flex-wrap: wrap; /* Allow links to wrap */
+    margin: 10px 0; /* Space above and below links */
+}
+
+.important-links, .quick-links, .tikana {
+    display: inline-block; /* Display links inline */
+    margin: 0 10px; /* Space between links */
+    font-size: 16px; /* Links text size */
+}
+
+.important-links::before, .quick-links::before, .tikana::before {
+    content: "•"; /* Bullet point before each link */
+    margin-right: 5px; /* Space between bullet and text */
+    color: #ffcc00; /* Bullet point color */
+}
+
+a {
+    color: #fff; /* Link text color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+.social-icons {
+    margin-top: 20px; /* Space above social icons */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Space between social icons */
+    color: #fff; /* Social icon color */
+    font-size: 20px; /* Social icon size */
+}
+
+.social-icons a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+@media (max-width: 600px) {
+    .links-container {
+        flex-direction: column; /* Stack links vertically on small screens */
+    }
+    
+    .important-links, .quick-links, .tikana {
+        margin: 10px 0; /* Space between links */
+    }
+}

@@ -1,0 +1,115 @@
+/* Account.css */
+
+/* Root container styling */
+.account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #2916f5; /* Deep blue background color */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Form container styling */
+.login-form, .signup-form {
+    background: #fcfafb; /* Light background color */
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(91, 78, 78, 0.1);
+    padding: 50px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.5s, box-shadow 0.5s; /* Smooth transition for transform and box-shadow */
+    box-sizing: border-box;
+}
+
+/* Hover effect for form container */
+.login-form:hover, .signup-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(91, 78, 78, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Form title styling */
+h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333; /* Dark text color */
+    font-weight: 700; /* Bold font weight for titles */
+}
+
+/* Input field styling */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 15px; /* Increased padding for better touch targets */
+    margin: 10px 0;
+    border: 1px solid #17a8dc; /* Blue border color */
+    border-radius: 10px; /* Rounded corners */
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+/* Input field focus styling */
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #e813fb; /* Pink border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+button {
+    background-color: #e813fb; /* Pink background color */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 15px 20px; /* Increased padding for better touch targets */
+    margin-top: 20px;
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600; /* Semi-bold font weight for buttons */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and transform */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #d011e8; /* Slightly darker pink on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Toggle form text styling */
+p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #666; /* Medium grey text color */
+}
+
+p span {
+    color: #e60023; /* Red color for clickable text */
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s; /* Smooth transition for color */
+}
+
+p span:hover {
+    color: #c0001b; /* Slightly darker red on hover */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 480px) {
+    .login-form, .signup-form {
+        padding: 30px 20px; /* Adjusted padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], button {
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
